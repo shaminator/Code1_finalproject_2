@@ -1,0 +1,31 @@
+// shader.fragmentShader = shader.fragmentShader.replace(
+    //     'uniform float opacity;',
+    //     `
+    //         uniform float opacity;
+    //         uniform float uTime;
+    //     `
+    // )
+
+    // shader.fragmentShader = shader.fragmentShader.replace(
+    //     'vec3 outgoingLight = totalDiffuse + totalSpecular + totalEmissiveRadiance;',
+    //     `
+    //     vec3 outgoingLight = totalDiffuse + totalSpecular + totalEmissiveRadiance + vec3(0.0, (sin(uTime * 0.01) * 0.5), 0.0);
+    //     `
+    // )
+
+    // floorMaterial.onBeforeCompile = (shader) => {
+//     shader.uniforms.uTime = customUniforms.uTime;
+// }
+
+// const floorMaterial = new THREE.ShaderMaterial({ 
+//     vertexShader: floorVertexShader,
+//     fragmentShader: floorFragmentShader,
+//     uniforms: THREE.UniformsUtils.merge([
+//         THREE.UniformsLib['lights'],
+//         {
+//             uTime: { value: 0.0 },
+//             uTexture: { value: null }
+//         }]),
+//     lights: true
+// });
+// floorMaterial.uniforms.uTexture.value = floorTexture.color
